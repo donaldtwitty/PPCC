@@ -859,35 +859,21 @@ ul.slick-dots {
 
 
 
-/* Partners Style */
+/* Above Footer Style */
 
-.contact-partners {
-	margin-top: -8px!important;
+
+.above-footer {
+	margin-top: 80px;
+	background-color: #ffffff;
+	padding: 30px 0px;
 }
-
-.partners {
-	margin-top: 140px;
-	background-color: #f7f7f7;
-	padding: 60px 0px;
-}
-
-.partners .owl-item {
-	text-align: center;
-	cursor: pointer;
-}
-
-.partners .partner-item img {
-	max-width: 156px;
-	margin: auto;
-}
-
 
 
 /* Footer Style */
 
 footer {
 	background-color: #232323;
-	padding: 80px 0px;
+	padding: 50px 0px;
 	color: #fff;
 }
 
@@ -1034,7 +1020,7 @@ footer .contact-form button.filled-button:hover {
 .sub-footer {
 	background-color: #343434;
 	text-align: center;
-	padding: 25px 0px;
+	padding: 15px 0px;
 }
 
 .sub-footer p {
