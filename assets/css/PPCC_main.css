@@ -380,22 +380,33 @@ header .navbar {
 }
 
 .Modern-Slider .item .img-fill {
+	position: relative;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	height:95vh;
 }
 
+.Modern-Slider .item .img-fill::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(37, 37, 37, 0.75);
+}
+
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/worship_banner_01.png);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_02.jpg);
+	background-image: url(../images/worship_banner_02.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03.jpg);
+	background-image: url(../images/worship_banner_03.jpg);
 }
 
 .Modern-Slider .NextArrow{
