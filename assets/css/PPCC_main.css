@@ -583,7 +583,7 @@ ul.slick-dots {
 
 .fun-facts {
 	margin-top: 140px;
-	background-image: url(../images/fun-facts-bg.jpg);
+	background-image: url(../images/tithe_bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -621,20 +621,14 @@ ul.slick-dots {
 	margin-right: 45px;
 }
 
-.count-area-content {
+.tithe-area-content {
 	text-align: center;
-	background-color: rgba(250,250,250,0.1);
+	background-color: rgba(138, 138, 138, 0.3);
 	padding: 25px 30px 35px 30px;
 	margin: 15px 0px;
 }
 
-.count-digit {
-    margin: 5px 0px;
-    color: #236B48;
-    font-weight: 700;
-    font-size: 36px;
-}
-.count-title {
+.tithe-title {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
