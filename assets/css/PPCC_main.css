@@ -691,18 +691,18 @@ ul.slick-dots {
 }
 
 
-/* Testimonials Style */
+/* We Believe Style */
 
 .about-testimonials {
 	margin-top: 0px!important;
 }
 
-.testimonials {
+.we-believe {
 	margin-top: 75px;
 	/*background-color: #f7f7f7;*/
 	padding-bottom: 100px;
 }
-.testimonial-item .inner-content {
+.we-believe .inner-content {
 	text-align: center;
 	/*background-color: #fff;	*/
 	padding: 20px;
@@ -710,25 +710,25 @@ ul.slick-dots {
 	background-color: #f7f7f7;
 
 }
-.testimonial-item p {
+.we-believe-item p {
 	font-size: 14px;
 	font-weight: 400;
 }
-.testimonial-item h4 {
+.we-believe-item h4 {
 	font-size: 19px;
 	font-weight: 700;
 	color: #1e1e1e;
 	letter-spacing: 0.5px;
 	margin-bottom: 0px;
 }
-.testimonial-item span {
+.we-believe-item span {
 	display: inline-block;
 	margin-top: 8px;
 	font-weight: 600;
 	font-size: 14px;
 	color: #236B48;
 }
-.testimonial-item img {
+.we-believe-item img {
 	max-width: 60px;
 	border-radius: 50%;
 	margin: 25px auto 0px auto;

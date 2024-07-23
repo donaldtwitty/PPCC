@@ -31,8 +31,8 @@ jQuery( document ).ready(function( $ ) {
             $("header").removeClass("background-header");
           }
         });
-		if ($('.owl-testimonials').length) {
-            $('.owl-testimonials').owlCarousel({
+		if ($('.ppcc-we-believe').length) {
+            $('.ppcc-we-believe').owlCarousel({
                 loop: true,
                 nav: false,
                 dots: true,
