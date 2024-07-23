@@ -698,15 +698,17 @@ ul.slick-dots {
 }
 
 .testimonials {
-	margin-top: 140px;
-	background-color: #f7f7f7;
-	padding: 140px 0px;
+	margin-top: 75px;
+	/*background-color: #f7f7f7;*/
+	padding-bottom: 100px;
 }
 .testimonial-item .inner-content {
 	text-align: center;
-	background-color: #fff;	
-	padding: 30px;
+	/*background-color: #fff;	*/
+	padding: 20px;
 	border-radius: 5px;
+	background-color: #f7f7f7;
+
 }
 .testimonial-item p {
 	font-size: 14px;
@@ -732,7 +734,9 @@ ul.slick-dots {
 	margin: 25px auto 0px auto;
 }
 
-
+.we-believe-space {
+	padding-bottom: 10px;
+}
 
 
 /* Call Back Style */
