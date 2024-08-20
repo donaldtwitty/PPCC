@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
     });
     if ($('.ppcc-we-believe').length) {
         $('.ppcc-we-believe').owlCarousel({
-            // loop: true,
+            loop: true,
             nav: false,
             dots: true,
             items: 1,
