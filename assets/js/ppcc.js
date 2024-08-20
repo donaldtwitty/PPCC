@@ -228,9 +228,9 @@
 		rtlClass: 'owl-rtl',
 		responsiveClass: 'owl-responsive',
 		dragClass: 'owl-drag',
-		itemClass: 'owl-item',
+		itemClass: 'ppcc-item',
 		stageClass: 'owl-stage',
-		stageOuterClass: 'owl-stage-outer',
+		stageOuterClass: 'ppcc-stage-outer',
 		grabClass: 'owl-grab'
 	};
 
@@ -473,7 +473,7 @@
 	 * Create item DOM elements
 	 */
 	Owl.prototype.initializeItems = function() {
-		var $items = this.$element.find('.owl-item');
+		var $items = this.$element.find('.ppcc-item');
 
 		// if the items are already in the DOM, grab them and skip item initialization
 		if ($items.length) {
