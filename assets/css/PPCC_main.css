@@ -274,7 +274,7 @@ header .navbar {
 
 .navbar .navbar-brand {
     float: left;
-    margin-top: 12px;
+    /*margin-top: 12px;*/
     outline: none;
 }
 
@@ -1012,7 +1012,7 @@ footer ul.social-icons li {
 }
 
 footer ul.social-icons li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 footer ul.social-icons li a {
