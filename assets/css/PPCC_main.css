@@ -431,7 +431,7 @@ header .navbar {
     background-color: transparent;
     text-align: center;
     font-size: 36px;
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome', serif;
     color: #FFF;
     z-index: 5;
     outline: none;
@@ -450,7 +450,7 @@ header .navbar {
     background-color: transparent;
     text-align: center;
     font-size: 36px;
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome', serif;
     color: #FFF;
     z-index: 5;
     outline: none;
@@ -529,7 +529,7 @@ ul.slick-dots {
 }
 
 
-/* ==== Slick Slider Css Ruls === */
+/* ==== Slick Slider Css Rules === */
 .slick-slider {
     position: relative;
     display: block;
