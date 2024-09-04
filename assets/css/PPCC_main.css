@@ -24,11 +24,36 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
+    margin: 0;
 }
 
 h7 {
     font-size: 20px;
+}
+
+a.book-button {
+    background-color: #236B48;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-bottom: 6px;
+}
+
+a.book-button img.logo {
+    height: 18px;
+    width: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+a.book-button:hover {
+    background-color: #fff;
+    color: #236B48;
 }
 
 a.filled-button {
@@ -66,9 +91,15 @@ a.border-button:hover {
     color: #236B48;
 }
 
+.book-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #236B48;
+}
+
 .section-heading {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .section-heading h2 {
