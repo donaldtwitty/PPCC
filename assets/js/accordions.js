@@ -389,8 +389,8 @@
         });
 
         basePrototype = new base();
-        // we need to make the options hash a property directly on the new instance
-        // otherwise we'll modify the options hash on the prototype that we're
+        // we need to make the option hash a property directly on the new instance
+        // otherwise we'll modify the option hash on the prototype that we're
         // inheriting from
         basePrototype.options = $.widget.extend({}, basePrototype.options);
         $.each(prototype, function (prop, value) {
@@ -434,7 +434,7 @@
             widgetFullName: fullName
         });
 
-        // If this widget is being redefined then we need to find all widgets that
+        // If this widget is being redefined, then we need to find all widgets that
         // are inheriting from it and redefine all of them so that they inherit from
         // the new version of this widget. We're essentially trying to replace one
         // level in the prototype chain.
