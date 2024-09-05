@@ -7,7 +7,7 @@ body {
 }
 
 p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 14px;
     color: #666666;
     line-height: 30px;
@@ -25,10 +25,6 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-}
-
-h7 {
-    font-size: 20px;
 }
 
 a.book-button {
@@ -215,7 +211,7 @@ a.border-button:hover {
 
 .sub-header ul.left-info li {
     border-left: 1px solid rgba(250, 250, 250, 0.3);
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .sub-header ul.left-info li:last-child {
@@ -273,18 +269,18 @@ header {
 }
 
 header .navbar {
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .background-header .navbar {
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .background-header {
     top: 0;
     position: fixed;
     background-color: #fff !important;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .background-header .navbar-brand h2 {
@@ -334,7 +330,7 @@ header .navbar {
 }
 
 .navbar .navbar-nav .nav-item {
-    margin: 0px 15px;
+    margin: 0 15px;
 }
 
 .navbar .navbar-nav a.nav-link {
@@ -365,7 +361,7 @@ header .navbar {
     background-color: #fff;
     height: 36px;
     outline: none;
-    border-radius: 0px;
+    border-radius: 0;
     position: absolute;
     right: 30px;
     top: 20px;
@@ -376,7 +372,7 @@ header .navbar {
     color: #236B48;
     font-size: 18px;
     line-height: 26px;
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome', sans-serif;
 }
 
 
@@ -647,7 +643,7 @@ ul.slick-dots {
 
 .request-form {
     background-color: #236B48;
-    padding: 40px 0px;
+    padding: 40px 0;
     color: #fff;
 }
 
@@ -706,7 +702,7 @@ ul.slick-dots {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 140px 0px;
+    padding: 140px 0;
     color: #fff;
     position: relative;
     z-index: 1;
@@ -756,7 +752,7 @@ ul.slick-dots {
     text-align: center;
     background-color: rgba(138, 138, 138, 0.3);
     padding: 25px 30px 35px 30px;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 
 .giving-title {
@@ -788,7 +784,7 @@ ul.slick-dots {
 }
 
 .about-info .right-content {
-    padding: 0px !important;
+    padding: 0 !important;
     margin-right: 30px;
 }
 
@@ -824,7 +820,7 @@ ul.slick-dots {
 /* We Believe Style */
 
 .about-we-believe {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 
 .we-believe {
@@ -850,7 +846,7 @@ ul.slick-dots {
     font-weight: 700;
     color: #1e1e1e;
     letter-spacing: 0.5px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .we-believe-item span {
@@ -864,7 +860,7 @@ ul.slick-dots {
 .we-believe-item img {
     max-width: 60px;
     border-radius: 50%;
-    margin: 25px auto 0px auto;
+    margin: 25px auto 0 auto;
 }
 
 .we-believe-space {
@@ -886,7 +882,7 @@ ul.slick-dots {
 
 .contact-us {
     background-color: #f7f7f7;
-    padding: 140px 0px;
+    padding: 140px 0;
 }
 
 .contact-us .contact-form {
@@ -910,7 +906,7 @@ ul.slick-dots {
     height: 40px;
     line-height: 40px;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0 15px;
     color: #6a6a6a;
     font-size: 13px;
     text-transform: none;
@@ -1066,7 +1062,7 @@ footer ul.menu-list li {
 }
 
 footer ul.menu-list li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 footer ul.menu-list li a {
@@ -1084,7 +1080,7 @@ footer .contact-form input {
     height: 40px;
     line-height: 40px;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0 15px;
     color: #aaa !important;
     background-color: #343434;
     font-size: 13px;
@@ -1165,7 +1161,7 @@ footer .contact-form button.filled-button:hover {
 .sub-footer {
     background-color: #343434;
     text-align: center;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 
 .sub-footer p {
@@ -1185,7 +1181,7 @@ footer .contact-form button.filled-button:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 230px 0px 150px 0px;
+    padding: 230px 0 150px 0;
     color: #fff;
 }
 
@@ -1263,7 +1259,7 @@ footer .contact-form button.filled-button:hover {
 }
 
 #tabs ul li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #tabs ul li a {
@@ -1322,7 +1318,7 @@ footer .contact-form button.filled-button:hover {
 .tabs-content p {
     font-size: 14px;
     color: #7a7a7a;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 
@@ -1413,7 +1409,7 @@ footer .contact-form button.filled-button:hover {
     }
 
     .giving .left-content {
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 30px;
     }
 
@@ -1422,7 +1418,7 @@ footer .contact-form button.filled-button:hover {
     }
 
     footer {
-        padding: 80px 0px 20px 0px;
+        padding: 80px 0 20px 0;
     }
 
     footer .footer-item {
@@ -1436,7 +1432,7 @@ footer .contact-form button.filled-button:hover {
     }
 
     .about-info .right-content {
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 30px;
     }
 
@@ -1477,7 +1473,7 @@ footer .contact-form button.filled-button:hover {
         width: 100%;
         text-align: center;
         background-color: #fff;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
 
     .navbar .navbar-nav .nav-item {
@@ -1489,7 +1485,7 @@ footer .contact-form button.filled-button:hover {
     }
 
     .navbar .navbar-nav a.nav-link {
-        padding: 15px 0px;
+        padding: 15px 0;
         color: #1e1e1e !important;
     }
 
