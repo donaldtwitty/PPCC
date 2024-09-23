@@ -872,6 +872,7 @@ ul.slick-dots {
     margin-right: 100px
 }
 
+
 /* Call Back Style */
 
 .callback-services {
@@ -1000,7 +1001,6 @@ ul.slick-dots {
 
 
 /* Above Footer Style */
-
 
 .above-footer {
     margin-top: 80px;
@@ -1155,6 +1155,9 @@ footer .contact-form button.filled-button:hover {
     color: #236B48;
 }
 
+.org {
+    font-size: 8px;
+}
 
 /* Sub-footer Style */
 
