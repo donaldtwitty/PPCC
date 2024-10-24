@@ -721,7 +721,16 @@ ul.slick-dots {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
     border: 5px solid #236B48;
+}
+
+@media (max-width: 768px) {
+    .conference-2024 {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Giving */
