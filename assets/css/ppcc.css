@@ -164,12 +164,7 @@
 /*
  * 	Owl Carousel - Lazy Load Plugin
  */
-.ppcc-carousel .ppcc-item {
-    /**
-              This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
-              calculation of the height of the ppcc-item that breaks page layouts
-           */
-}
+/* Removed empty rule block */
 
 .ppcc-carousel .ppcc-item .owl-lazy {
     opacity: 0;
