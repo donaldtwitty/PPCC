@@ -133,7 +133,10 @@ jQuery(document).ready(function ($) {
                     duration: 3000,
                     easing: 'swing',
                     step: function () {
-                        $this.text(Math.ceil(this.Counter));
+                        var value = Math.ceil(this.Counter);
+                        if (typeof value === 'number' && !isNaN(value)) {
+                            $this.text(value);
+                        }
                     }
                 });
             });

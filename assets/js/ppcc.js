@@ -1619,7 +1619,7 @@
 					if (_default && _default.apply && (!e.namespace || e.namespace.indexOf('owl') === -1)) {
 						return _default.apply(this, arguments);
 					}
-					return e.namespace && e.namespace.indexOf('owl') > -1;
+					return e.namespace && e.namespace === 'owl' || (e.namespace && e.namespace.startsWith && e.namespace.startsWith('owl.'));
 				};
 				$.event.special[object.name].owl = true;
 			}
@@ -1654,7 +1654,7 @@
 	 */
 	Owl.prototype.release = function(events) {
 		$.each(events, $.proxy(function(index, event) {
-			delete this._supress[event];
+			this._supress[event] = undefined;
 		}, this));
 	};
 
@@ -1985,7 +1985,7 @@
 				image = new Image();
 				image.onload = $.proxy(function() {
 					$element.css({
-						'background-image': 'url("' + url + '")',
+						'background-image': 'url("' + $('<div>').text(url).html() + '")',
 						'opacity': '1'
 					});
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
@@ -2284,11 +2284,11 @@
 
 			id = url.match(/(http:|https:|)\/\/(player.|www.|app.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com|be\-nocookie\.com)|vzaar\.com)\/(video\/|videos\/|embed\/|channels\/.+\/|groups\/.+\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
 
-			if (id[3].indexOf('youtu') > -1) {
+			if (id && id[3] && id[3].indexOf('youtu') > -1) {
 				type = 'youtube';
-			} else if (id[3].indexOf('vimeo') > -1) {
+			} else if (id && id[3] && id[3].indexOf('vimeo') > -1) {
 				type = 'vimeo';
-			} else if (id[3].indexOf('vzaar') > -1) {
+			} else if (id && id[3] && id[3].indexOf('vzaar') > -1) {
 				type = 'vzaar';
 			} else {
 				throw new Error('Video URL not supported.');
@@ -2332,12 +2332,12 @@
 				if (settings.lazyLoad) {
 					tnLink = $('<div/>',{
 						"class": 'owl-video-tn ' + lazyClass,
-						"srcType": path
+						"srcType": $('<div>').text(path).html()
 					});
 				} else {
 					tnLink = $( '<div/>', {
 						"class": "owl-video-tn",
-						"style": 'opacity:1;background-image:url(' + path + ')'
+						"style": 'opacity:1;background-image:url(' + $('<div>').text(path).html() + ')'
 					});
 				}
 				target.after(tnLink);
@@ -2429,8 +2429,8 @@
 		this._core.reset(item.index());
 
 		html = $( '<iframe frameborder="0" allowfullscreen mozallowfullscreen webkitAllowFullScreen ></iframe>' );
-		html.attr( 'height', height );
-		html.attr( 'width', width );
+		html.attr( 'height', parseInt(height) || 0 );
+		html.attr( 'width', parseInt(width) || 0 );
 		if (video.type === 'youtube') {
 			html.attr( 'src', '//www.youtube.com/embed/' + video.id + '?autoplay=1&rel=0&v=' + video.id );
 		} else if (video.type === 'vimeo') {
