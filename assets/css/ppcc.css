@@ -265,3 +265,238 @@
     border-radius: 50%;
     padding: 20px;
 }
+/* Video Section */
+.video-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-wrapper .embed-responsive {
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        padding: 60px 0;
+    }
+    
+    .video-wrapper {
+        margin: 0 15px;
+        border-radius: 10px;
+    }
+}
+/* Video Thumbnail */
+.video-thumbnail {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button i {
+    color: white;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+    .video-thumbnail {
+        margin: 0 15px;
+        border-radius: 10px;
+    }
+    
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .play-button i {
+        font-size: 18px;
+    }
+}
+.video-thumbnail video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Smaller video thumbnail */
+.video-thumbnail {
+    max-width: 300px !important;
+}
+
+/* Modal video sizing */
+.modal-body video {
+    max-height: 60vh;
+}
+
+@media (max-width: 768px) {
+    .video-thumbnail {
+        max-width: 300px !important;
+    }
+    
+    .modal-body video {
+        max-height: 50vh;
+    }
+}
+/* Modal positioning and close button */
+.modal-dialog {
+    margin: 5% auto;
+}
+
+.modal-header .close {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    opacity: 0.8;
+    padding: 0;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 2% auto;
+    }
+}
+/* Reduce white space on About Us page only */
+.about-info {
+    padding-bottom: 40px !important;
+}
+
+.team .container.pt-5 {
+    padding-top: 2rem !important;
+}
+/* Sermon Library Enhancements */
+.sermon-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sermon-info {
+    margin-top: 15px;
+}
+
+.sermon-info h4 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.sermon-info span {
+    color: #666;
+    font-size: 14px;
+}
+
+.play-button {
+    transition: all 0.4s ease;
+}
+
+.play-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.play-button:hover i {
+    color: #333;
+}
+/* Sermon CTA Section */
+.sermon-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sermon-cta-content h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.sermon-cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.sermon-cta .filled-button {
+    background: white;
+    color: #667eea;
+    border: 2px solid white;
+}
+
+.sermon-cta .filled-button:hover {
+    background: transparent;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sermon-cta {
+        padding: 30px 20px;
+        margin: 0 15px;
+    }
+    
+    .sermon-cta-content h3 {
+        font-size: 24px;
+    }
+}

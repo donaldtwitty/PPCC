@@ -219,6 +219,54 @@
         </div>
     </div>
 
+    <!-- Video Section -->
+    <div id="sermon-library" class="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Sermon <em>Library</em></h2>
+                        <span>Messages from Dr. Patricia Corbitt</span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sermon-item">
+                        <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal">
+                            <img src="https://img.youtube.com/vi/nhQWnjGCxjQ/maxresdefault.jpg" alt="Sermon Thumbnail">
+                            <div class="play-button">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="video-duration">27:13</div>
+                        </div>
+                        <div class="sermon-info">
+                            <h4>Eternal Life</h4>
+                            <span>Blanche Methodist Church • Taft, TN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Sermon Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nhQWnjGCxjQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Freewill Offerings -->
     <div class="giving">
         <div class="container">
@@ -455,6 +503,8 @@
     <script src="assets/js/ppcc.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/video-modal.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
 
 </body>
 </html>
