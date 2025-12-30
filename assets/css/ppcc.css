@@ -500,3 +500,12 @@
         font-size: 24px;
     }
 }
+@media (max-width: 768px) {
+    .video-thumbnail {
+        margin: 0 auto !important;
+    }
+    
+    .sermon-item {
+        text-align: center;
+    }
+}
