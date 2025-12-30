@@ -15,14 +15,7 @@
     /* fix firefox animation glitch */
 }
 
-.ppcc-carousel .owl-stage:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
+
 
 .ppcc-carousel .ppcc-stage-outer {
     position: relative;
@@ -269,6 +262,7 @@
 .video-section {
     background: #f8f9fa;
     padding: 80px 0;
+    margin-bottom: -140px;
 }
 
 .video-wrapper {
@@ -508,4 +502,179 @@
     .sermon-item {
         text-align: center;
     }
+}
+/* Our Pastor Section Improvements */
+.team .team-item {
+    margin-bottom: 30px;
+}
+
+.team .team-item p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.team .section-heading h2 {
+    margin-bottom: 20px;
+}
+
+.team .book-heading ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.team .book-heading li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0 !important;
+}
+
+.team .book-heading li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .team .row.justify-content-between {
+        flex-direction: column;
+    }
+    
+    .team .col-md-6 {
+        margin-bottom: 40px;
+    }
+    
+    .team .team-item p {
+        text-align: left;
+        font-size: 14px;
+    }
+}
+/* Enhanced Pastor Section Styling */
+.team {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+}
+
+.team .team-item {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team .team-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team .team-item img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Books Section Enhancement */
+.book-heading {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.book-heading ul {
+    margin: 0;
+}
+
+.book-heading li {
+    color: white;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+}
+
+.book-heading li:last-child {
+    border-bottom: none;
+}
+
+/* Purchase Buttons Enhancement */
+.book-button {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.book-button:hover {
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.book-button .logo {
+    height: 20px;
+    margin-left: 8px;
+}
+
+/* Section Headers Enhancement */
+.team .section-heading {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.team .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+/* Spiritual Gifts Image Enhancement */
+.spiritual-gifts-wrapper {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.spiritual-gifts-wrapper img {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.spiritual-gifts-wrapper img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding: 60px 0;
+    }
+    
+    .team .team-item {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .book-heading {
+        padding: 20px;
+    }
+}
+.team .section-heading::after {
+    display: none;
+}
+.team {
+    padding-bottom: 20px !important;
+}
+
+.we-believe .inner-content {
+    background-color: transparent !important;
 }
