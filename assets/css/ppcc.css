@@ -721,3 +721,40 @@
         max-width: 100%;
     }
 }
+/* Leadership Team Equal Height Boxes */
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team .col-md-4 {
+    display: flex;
+}
+
+.team .col-md-4 .team-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+.team .col-md-4 .team-item img {
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+
+.team .col-md-4 .team-item .down-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .team .col-md-4 .team-item {
+        min-height: auto;
+    }
+}
