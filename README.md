@@ -9,7 +9,7 @@ A responsive church website built with Bootstrap and modern web technologies.
 - **Ministry Pages**: Detailed information about church ministries
 - **Contact Integration**: Contact forms and location mapping
 - **Accessibility**: Proper alt text and semantic HTML
-- **Performance Optimized**: Minified CSS/JS and optimized images
+- **Performance Optimized**: Minified CSS/JS and optimized images 
 
 ## Structure
 
